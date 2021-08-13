@@ -36,5 +36,8 @@
   "files": [
     "build",
     "types"
-  ]
+  ],
+  "dependencies": {
+    "hex-rgb": "^5.0.0"
+  }
 }
