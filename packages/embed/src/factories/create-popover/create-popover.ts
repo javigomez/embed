@@ -65,7 +65,7 @@ const buildSpinner = () => {
   return icon
 }
 
-const buildIcon = (customIcon?: string, color?:string ) => {
+const buildIcon = (customIcon?: string, color?: string) => {
   const fillColor = getTextColor(color)
   const triggerIcon = document.createElement('div')
   triggerIcon.className = 'typeform-popover-button-icon'

@@ -5,7 +5,7 @@ import {
   unmountElement,
   setAutoClose,
   addCustomKeyboardListener,
-  getTextColor
+  getTextColor,
 } from '../../utils'
 
 import { SidetabOptions } from './sidetab-options'

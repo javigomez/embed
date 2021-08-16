@@ -24,8 +24,6 @@ export const createWidget = (formId: string, options: WidgetOptions): Widget => 
     }
   }
 
-  console.log(options)
-
   const widgetOptions = options
 
   if (!options.inlineOnMobile && (options.forceTouch || isFullscreen())) {
