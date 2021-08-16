@@ -7,6 +7,7 @@ import {
   unmountElement,
   setAutoClose,
   addCustomKeyboardListener,
+  setMaxHeight,
 } from '../../utils'
 import { POPUP_SIZE } from '../../constants'
 
@@ -102,6 +103,7 @@ export const createPopup = (formId: string, userOptions: PopupOptions = {}): Pop
       document.body.style.overflow = 'hidden'
       setTimeout(() => {
         popup.style.opacity = '1'
+        setMaxHeight(wrapper)
       })
     }
   }

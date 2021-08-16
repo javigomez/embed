@@ -5,6 +5,7 @@ import {
   unmountElement,
   setAutoClose,
   addCustomKeyboardListener,
+  setMaxHeight,
 } from '../../utils'
 
 import { PopoverOptions } from './popover-options'
@@ -184,6 +185,7 @@ export const createPopover = (formId: string, userOptions: PopoverOptions = {}):
         popover.append(wrapper)
         wrapper.style.opacity = '0'
         closeModal.style.opacity = '0'
+        setMaxHeight(wrapper)
         replaceIcon(icon, spinner)
       })
     }
